@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background: url("../public/lotter-backrgound.jpg") center no-repeat;
+  background-size: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

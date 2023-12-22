@@ -12,19 +12,23 @@ function App() {
         while (newNumbers.length < 5) {
             const randomNumber = Math.floor(Math.random() * 32) + 5;
             newNumbers.push(randomNumber);
-
         }
+
+        newNumbers.sort(function (a, b) {
+            return a - b
+        })
         setNumbers(newNumbers);
     };
 
   return (
    <div className='App'>
-       <h2>Welcome to the lottery</h2>
-       <button onClick={random}>New numbers</button>
+       <h2 className='main-title'>Welcome to the lottery</h2>
+       <button className='btn-number' onClick={random}>New numbers</button>
        <div className='main-block'>
                {numbers.map((numberRand, key) => (
+
                    <LotteryRandomNumber key={key} randomNumber={numberRand}/>
-               ))};
+               ))}
        </div>
    </div>
   );

@@ -1,0 +1,34 @@
+.lottery-random-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 5px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.lottery-random-number:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.box {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
